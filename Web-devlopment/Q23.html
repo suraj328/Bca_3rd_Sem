@@ -1,0 +1,21 @@
+<!-- 23. Write an HTML program to perform the following operations to the first letter of a
+paragraph using pseudo elements:
+a. Change the font size to 25 pixels.
+b. Change the color to #243447. -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q23</title>
+    <style>
+        p::first-letter{
+            color:#243447 ;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+</body>
+</html>
