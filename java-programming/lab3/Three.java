@@ -21,24 +21,11 @@ class CheckAge {
         
     }
 }
-class Num{
-    void display(){
-    int num=0;
-    
-    int num2=5;
-    if (num==0) {
-        throw new ArithmeticException("can not divide by zero");
-    } else {
-        int result=num2/num;
-        System.out.println("divison:"+result);
-    }
-    }
-}
+
 public class Three {
     public static void main(String[] args) {
         
         CheckAge check=new CheckAge();
-        Num nu=new Num();
-        nu.display();
+        
     }
 }

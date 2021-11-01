@@ -11,7 +11,7 @@ public class One {
         int a = sc.nextInt();
         int b = sc.nextInt();
         try {
-            result = (a * 1f) / (b * 1f);
+            result = a  / b;
             System.out.println("The divison of your given number is:" + result);
         } catch (Exception e) {
             System.out.println("Cannt divide by zer0");
