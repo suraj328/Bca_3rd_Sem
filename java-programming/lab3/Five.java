@@ -1,4 +1,4 @@
-
+// 5) Write a program to demonstrate multiple catch block.
 
 public class Five {
     public static void main(String[] args) {
