@@ -4,6 +4,9 @@ public class Thirteen implements Runnable {
     public void run(){
         System.out.println("thread has ended");
     }
+    public void hello(){
+        System.out.println("hello");
+    }
     public static void main(String[] args) {
         Thirteen obj=new Thirteen();
         Thread t1=new Thread(obj);
