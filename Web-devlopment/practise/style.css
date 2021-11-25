@@ -1,0 +1,27 @@
+body {
+    background: #555;
+    padding-top: 10%;
+    background-image: url(image/body.jpg);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+  
+  div{
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    font-size: 18px;
+    
+    max-width: 40vw;
+    max-height: 70vh;
+    margin: auto;
+    background-image:url(image/div.jpg) ;
+    /* padding: 10px; */
+  }
+  input{
+      color:palevioletred;
+  }
+  input:hover{
+      color: blue;
+  }
+  
