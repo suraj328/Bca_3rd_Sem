@@ -18,11 +18,11 @@ public class Q16_AbstractFinal {
     }
 }
 abstract class Parent{
-    abstract void greet();
+    abstract public void greet();
     abstract void  location();
 }
 class Child extends Parent{
-    void greet(){
+    public void greet(){
         System.out.println("Good morning");
     }
     void location(){
@@ -30,7 +30,7 @@ class Child extends Parent{
     }
 }
 class Child2 extends Parent{
-    void greet(){
+    public void greet(){
         System.out.println("Good evening");
     }
     void location(){

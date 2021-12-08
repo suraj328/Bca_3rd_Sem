@@ -40,7 +40,7 @@ public class JFrameButton extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (e.getSource()==btn) {
             System.out.println("work sucessfully");
-            btn.setEnabled(false);//it gives action of one click only to button
+            // btn.setEnabled(false);//it gives action of one click only to button
         }
         
     }

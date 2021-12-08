@@ -3,6 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("lab2");
+        while (true) {
+            System.out.println("lab2");
+            
+        }
+        main m= new main();
     }
 }
