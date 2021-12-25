@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    
+    <style>
+        .container{
+    height: 344px;
+    width: 100%;
+    border: 2px solid;
+    display: flex;
+    flex-direction: row;
+    /*Flex properties*/
+    /* flex-direction: column;
+    flex-direction:row-reverse;
+    flex-direction: column-reverse; */
+    flex-wrap: wrap;  
+    /* flex-wrap: wrap-reverse;  */
+    /* justify-content: center; */
+    /* justify-content:space-between; */
+    /* justify-content:space-evenly; */
+    /* justify-content:space-around; */
+    /* align-items: center; */
+    /* align-items: flex-end;
+    align-items: flex-start; */
+}
+.item{
+    width: 150px;
+    background-color: tomato;
+    border:2px solid green;
+    margin: 10px;
+    padding: 3px;
+    height: 200px;
+}
+    </style>
+</head>
+<body>
+    <h1>This is flex Boy</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">second Box</div>
+        <div class="item" id="item-3">third Box</div>
+        <div class="item" id="item-4">fourth Box</div>
+        <div class="item" id="item-5">fifth Box</div>
+        <div class="item" id="item-6">sixth Box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            background-color: greenyellow;
+        }
+        .box{
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            /* position relative: is used to move the object */
+            position: relative;
+
+            /* anaimation-name:  provide a name for animation show we can appear animation to different objects*/
+            animation-name: suraj1;
+            /* animation duration: takes how much per time your animation should be visible  */
+            animation-duration: 7s;
+            /* animation-iteration-count: infinite; */
+
+            /* animation delay takes delay time or time to satr animation*/
+            animation-delay: 1s;
+
+            /* animation-fill-mode:used to stop animation as desire palce example:-forward,alternate */
+            /* in foward animation animation stop amd pause at max position */
+            /* animation-fill-mode: forwards; */
+            /* in alternate :aniamtion return to previous start from where animation have started */
+            animation-fill-mode: alternate;
+
+            /* animation-timing-function:by the help of this function we make animation fast and slow from begining to end; */
+            /* animation-timing-function: ease-in; use to make animation fast from begining and slow at middle to end  */
+            /* animation-timing-function: ease-in; */
+            /* animation-timing-function: ease-out;used to amake animation slow at begining and fast at middle to end */
+            /* animation-timing-function: ease-out; */
+            /* animation-timing-function: ease-in-out; use to make animation fast at starting and ending and slow at middle*/
+            animation-timing-function: ease-in-out;
+
+            /* animation-direction:used to set the direction to start ; */
+            /* alternate used as form normal it will start beginning to forward after that return to previous default  */
+            /* animation-direction:alternate ; */
+            /* rverse:start from the ending position and goes to starting position */
+            animation-direction: reverse;
+
+
+        }
+        @keyframes suraj1 {
+            25%{
+                top: 0px;
+                left: 0px;
+            }
+            50%{
+                top:250px ;
+                left: 0px;
+            }
+            75%{
+                top:250px ;
+                left:250px;
+
+            }
+            100%{
+                top: 0px;
+                left: 250;
+            }
+        }
+        @keyframes suraj {
+            from{
+                /* it is for starting  */
+                width: 250px;
+            }
+            to{
+                /* it is for ending */
+                width: 1400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box">I am suraj</div>
+    </div>
+</body>
+</html>
