@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Csst</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: red;
+            height: 700px;
+            width: 900px;
+            display:grid;
+            /* justify-items: start; *//*we can also use justify proprties in grid*/
+
+            /* it set item of given container by row and column according to given size */
+            /* grid-template-rows:133px 133px 133px;
+            grid-template-columns:133px 133px 133px ; */
+            
+            /* used all the spacte automatically from given containers */
+            /* grid-template-rows:repeat(3,1fr) ;
+            grid-template-columns:repeat(3,1fr) ; */
+
+            /* same as like abovr repaeat(3,1fr)properties */
+            grid-template-rows:43px 1fr 43px ;
+            grid-template-columns:1fr 1fr 1fr ;
+
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+        .item{
+            background-color: aqua;
+
+            /* when height and width of given container is not given by the above properties as like  1fr 1fr 1fr and repeat(3,1fr) it will take auto height width which is adjustable in container*/
+            /* height: 122px; ;
+            width: 122px;  */
+        }
+        .item4{
+            /* it set 4th item as 1st row and 1st column */
+            /* grid-column-start: 1;
+            grid-row-start: 1; */
+        }
+        .item1{
+            /* this propertis is used for exapnding row and column */
+            /* grid-column-start: 1; */
+            /* grid-column-end:4; */
+            /* justify-self: center; *//*it set content to center*/
+            grid-column:1 /span 3;/*it will span 3columns*/
+            background-color:black;
+            color: antiquewhite;
+        }
+        .footer{
+            grid-column-start: 1;
+            grid-column-end:4;
+            background-color: black;
+            color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item1">one <br> i am header</div>
+        <div class="item">two <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci inventore consectetur magnam facilis eligendi deleniti dolores pariatur modi hic asperiores, ex rem rerum nobis delectus cupiditate, nihil possimus error. Consequatur eum consequuntur minus, praesentium dolorum voluptatibus accusantium deleniti itaque, iste sapiente, nobis obcaecati. Quibusdam ea sapiente a nobis, explicabo quia. lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eos doloribus consequatur deserunt esse modi necessitatibus! Mollitia id magni eligendi soluta illo dolorum quam! Possimus eum minus officia est eius quis fugiat hic, incidunt at aperiam explicabo, rem enim veniam voluptatem, quas rerum facere soluta quaerat ex. Atque, impedit non aspernatur incidunt excepturi eos, ea iusto illo provident aperiam ad pariatur maiores amet porro, velit sunt! Facilis officiis in quo repellendus similique odit velit! Corrupti tenetur sit quod blanditiis id officia minus a laborum eum, nulla et repudiandae cumque. Suscipit?
+     </div>
+        <div class="item">three <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quam, cum deleniti illo voluptates consequatur facilis, nemo praesentium suscipit qui neque tempora ratione possimus porro? Id mollitia praesentium, odio autem adipisci numquam officia. Asperiores aperiam quasi, labore doloribus suscipit maiores animi officiis sequi, inventore recusandae excepturi eligendi perspiciatis maxime, in illum. Molestias voluptatibus at, reprehenderit quod numquam ut, deserunt tempore fugit nam illo vitae sunt doloribus similique facere ea cumque quibusdam perspiciatis, est in asperiores beatae architecto! Possimus soluta deleniti voluptatem eligendi repudiandae deserunt fugiat consequatur temporibus voluptate. Cupiditate commodi amet corrupti odit est alias tempore labore laborum impedit. Quibusdam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error aspernatur ipsa ea consequatur cumque commodi perspiciatis voluptatibus, asperiores eligendi similique dicta beatae aut! Distinctio vero excepturi, non est voluptatem unde.</div>
+        <div class="item item4">four <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa provident officia magnam atque corrupti sapiente impedit rerum minus architecto repellendus amet dignissimos reiciendis nobis itaque incidunt dolore, ducimus laudantium dicta possimus sit assumenda nulla. Saepe perferendis eos, omnis facere consequuntur debitis mollitia est cumque eaque quis? Aperiam vitae dolor labore sit, quos blanditiis accusantium commodi tenetur earum facilis, architecto nesciunt esse incidunt obcaecati molestias! Eos, nihil voluptate! Maiores rem nulla consequatur. Velit minus ab facere nihil laborum quis sit? Eveniet dolores incidunt commodi vero quasi nisi molestiae placeat facilis sequi hic doloribus quod beatae asperiores veniam in fuga voluptas temporibus minus id excepturi, aut ipsa omnis debitis labore. Dicta minima nisi temporibus qui consequatur at architecto velit modi deserunt veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus pariatur facere aperiam dolore explicabo ut tempora harum assumenda veniam sit atque odit quae ratione consequuntur quasi architecto, officiis repellat maxime!</div>
+        
+        <div class="item footer">seven <br> i am footer</div>
+        
+        
+    </div>
+</body>
+</html>
